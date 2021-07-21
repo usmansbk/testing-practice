@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/usmansbk/testing-practice/issues"
   },
-  "homepage": "https://github.com/usmansbk/testing-practice#readme"
+  "homepage": "https://github.com/usmansbk/testing-practice#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
 }
