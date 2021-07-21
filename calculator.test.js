@@ -51,3 +51,29 @@ describe("subtract", () => {
     expect(answer).toBe(1);
   });
 });
+
+describe("divide", () => {
+  test("4 / 2", () => {
+    const calculator = new Calculator();
+
+    const answer = calculator.divide(4, 2);
+
+    expect(answer).toBe(2);
+  });
+
+  test("2 / 4", () => {
+    const calculator = new Calculator();
+
+    const answer = calculator.divide(2, 4);
+
+    expect(answer).toBeCloseTo(0.5);
+  });
+
+  test("4 / 0", () => {
+    const calculator = new Calculator();
+
+    const answer = calculator.divide(4, 0);
+
+    expect(answer).toBe(Infinity);
+  });
+});
