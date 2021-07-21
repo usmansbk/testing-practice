@@ -77,3 +77,29 @@ describe("divide", () => {
     expect(answer).toBe(Infinity);
   });
 });
+
+describe("multiply", () => {
+  test("4 * 2", () => {
+    const calculator = new Calculator();
+
+    const answer = calculator.multiply(4, 2);
+
+    expect(answer).toBe(8);
+  });
+
+  test("2 * 0.5", () => {
+    const calculator = new Calculator();
+
+    const answer = calculator.multiply(2, 0.5);
+
+    expect(answer).toBeCloseTo(1.0);
+  });
+
+  test("4 * 0", () => {
+    const calculator = new Calculator();
+
+    const answer = calculator.multiply(4, 0);
+
+    expect(answer).toBe(0);
+  });
+});
